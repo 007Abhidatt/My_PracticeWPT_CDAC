@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>DOM</title>
+</head>
+<body>
+    <H1 id="d1">Welcome to DOM</H1>
+    <h2 id="d2">Welcome to<span> our</span> page </h2>
+    <input type="button" value="get content" onclick="get_content()">
+
+    <!-- <script>
+        function get_content(){
+            var heading=document.getElementById("d1")
+            console.log(heading.innerHTML)    
+        }
+    </script> -->
+    <!-- <script>
+        function get_content(){
+            var head =document.getElementById("d2");
+            console.log(head.innerHTML)
+            console.log(head.innerText)
+        }
+    </script> -->
+    <!-- to change the content -->
+     <script>  
+        function get_content(){
+        var heading=document.getElementById("d1")
+        heading.innerHTML="Change heading";
+        }
+        </script>
+     
+    
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+h4{
+    color: red;
+    
+}
+div{
+  
+   margin-top: 40px;
+   margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 100px;
+    box-shadow: 20px 20px 10px rgb(231, 223, 196);
+    border-radius:20px ;
+   
+   
+    
+}
+
+
+h1{
+    color: rgb(5, 34, 53);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #353131;
+
+}
+body{
+    background-image: url(bg2.jfif);
+    background-size:cover;
+}
+
+#p1{
+    border-color: blue;
+}
+#p2{
+    border-color: blue;
+}
+
+button{
+   padding: 5px;
+}

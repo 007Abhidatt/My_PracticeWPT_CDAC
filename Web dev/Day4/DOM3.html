@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>DOM3</title>
+</head>
+<body>
+    <!-- <input type="text" placeholder="Enter ph no." id="Id1">
+    <input type="button" value="-" onclick="remove_Field()"> -->
+    <div id="container">
+        <input type="text" placeholder="Enter name." id="Id2">
+        <input type="button" value="-" onclick="remove_Field()">
+
+    </div>
+    <!-- <script>
+        function remove_Field(){
+        const ref=document.getElementById("Id1")
+        ref.remove();
+            
+        }
+    </script>  -->
+    <script>
+        function remove_Field(){
+        const ref=document.getElementById("Id2")
+        const refcontainer =document.getElementById("container")
+        refcontainer.removeChild(ref)
+        }
+
+    </script>
+    
+
+</body>
+</html>

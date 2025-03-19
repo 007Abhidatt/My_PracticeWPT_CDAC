@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>DOM4</title>
+</head>
+<body>
+    <input type="password" placeholder="Enter password" id="Passid">
+    <input type="button" value="show" onclick="showpassword()" id="btn">
+    <script>
+        function showpassword(){
+           const pass = document.getElementById("Passid")
+           const btn =document.getElementById("btn")
+            const  btntext =btn.getAttribute("value")
+            if(btntext=="show"){
+                pass.setAttribute("type","text")
+                btn.setAttribute("value","hide")
+            }
+            else{
+                pass.setAttribute("type","password")
+                btn.setAttribute("value","show")
+            }
+        }   
+        
+    </script>
+    
+</body>
+</html>

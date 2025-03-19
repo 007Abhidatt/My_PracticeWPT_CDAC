@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM2</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter ph no.">
+    <input type="button" value="+" onclick="get_newfield()"> 
+    <div id="container">
+
+    </div>
+    <script>
+        function get_newfield(){
+            const newinput=document.createElement("input")
+            newinput.setAttribute("type", "text")
+            newinput.setAttribute("placeholder", "phone no. ")
+
+             const refcontainer=document.getElementById("container")
+             refcontainer.appendChild(newinput)
+        }
+    </script>
+    
+</body>
+</html>

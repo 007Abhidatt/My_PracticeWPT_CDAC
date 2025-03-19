@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parse</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter first value" id="num1">
+    <input type="text" placeholder="Enter second value " id="num2">
+    <input type="button" value="sum" onclick="sum()">
+    <h2 id="result"></h2>
+
+    <script>
+        function sum(){
+            // const x =document.getElementById("num1").value;
+            // const y=document.getElementById("num2").value;
+            // const z=x+y;
+            // document.getElementById("result").innerHTML="sum is " +z;  
+
+            // const x =parseInt(document.getElementById("num1").value); //using parseINT 
+            // const y=parseInt(document.getElementById("num2").value);
+            // const z=x+y;
+            // document.getElementById("result").innerHTML="sum is " +z; 
+            
+            const x =document.getElementById("num1").value;
+            const y=document.getElementById("num2").value;
+            const z=+x + +y;
+            document.getElementById("result").innerHTML="sum is " +z;  
+
+
+
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On/off BULB</title>
+    <style>
+         #img1{
+            margin: auto;
+            width: auto;
+        } 
+    </style>
+   
+
+
+</head>
+<body>
+    <img  src="bulb on.jfif" id="img1"  style="align-content: center;">
+    
+    <input type="button" value="OFF" onclick="on_off()" id="id1">
+
+    <script>
+        function on_off(){
+            const refimg =document.getElementById("img1")
+           var refbtn = document.getElementById("id1")
+            var btntext =refbtn.getAttribute("value")
+
+           if(btntext=="ON"){
+            refimg.setAttribute("src" , "bulb on.jfif")
+            refbtn.setAttribute("value","OFF")
+           }
+           else{
+            refimg.setAttribute("src" , "bulb off.jfif")
+            refbtn.setAttribute("value","ON")
+            
+           }
+
+
+        }
+    </script>
+    
+</body>
+</html>

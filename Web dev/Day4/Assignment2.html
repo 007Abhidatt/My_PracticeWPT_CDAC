@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    students=[{id:101,name:"ramesh",physics:80,Maths:95,hobbies :[ "music","sports"],
+    address:{houseno:1,state:"maharashtra",pincode:"440026"}},
+    
+    {id:102,name:"rahul",physics:70,Maths:85,hobbies :[ "music","sports"],
+    address:{houseno:100,state:"maharashtra",pincode:"447788"}},
+
+    {id:103,name:"vishal",physics:75,Maths:89,hobbies :[ "gaming","sports"],
+    address:{houseno:102,state:"maharashtra",pincode:"447790"}}
+    ];
+    totalmarks=[3];
+   for(i=0;i<students.length; i++){
+       totalmarks[i]=students[i].physics+students[i].Maths;
+
+   }
+   for(i=0;i<students.length;i++){
+      console.log("Average of "+students[i].name);
+      console.log(totalmarks[i]/2);
+   }
+    
+    </script>
+    </body>
+</html>

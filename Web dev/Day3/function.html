@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script></script>
+</head>
+<body>
+    <h1>Function in javascript</h1>
+    <script>
+        function show(){
+            document.write("hii from show function")
+            document.write("<br><br>")
+        }
+        function add( x , y){
+            
+           document.write(`sum of ${x} and ${y} is : ${x+y}`)
+           document.write("<br><br>")
+           return x+y;
+
+        }
+        function multi(x , y){
+
+            console.log(x*y)
+            document.write(`multiplication of ${x} and ${y} is : ${x*y}`)
+
+        }
+        show()
+        result=add(10,25)
+        add(20 , 20)
+        console.log(result)
+        multi(2 , 2)
+
+    </script>
+     <script>
+        
+        function show()
+         {
+           console.log("hello");
+         }
+       
+        console.log(show);//it display to whom this reference is reffering to
+        show();//it will give call to the function by using reference show  
+          </script>
+
+          <script>
+            x=function show(){
+                console.log("hello IET")
+            }
+            x(); //calling function through refrance
+
+            //short hand representtion
+            x=function(){
+                console.log("hello IET")
+            }
+            x(); 
+
+
+          </script>
+          <script>
+             x=()=>{
+            console.log("hello IET from fat arrow")
+        }
+        x(); 
+          </script>
+
+          <h1>Fat arrow </h1>
+          <script>
+            x=()=>console.log("hello IET from fat arrow")
+       
+              x(); 
+           </script>
+           <script>
+            x=()=>console.log("hello IET from fat arrow");  console.log("5");console.log("hello");
+       
+              x(); 
+              res=(x)=>{
+                return x*x*x
+              }
+              console.log(res(10));
+           </script>
+           
+           <script>
+            res=(x)=>x*x*x
+              
+              console.log(res(10));
+
+           </script>
+         
+        </script>
+        <script>
+         res=x=>x*x*x
+           
+           console.log(res(10));
+
+        </script>
+      
+
+           
+</body>
+</html>

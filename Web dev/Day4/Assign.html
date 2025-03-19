@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    students=[{id:101,name:"ramesh",marks:98,hobbies :[ "music","sports"],
+    address:{houseno:1,state:"maharashtra",pincode:"440026"}},
+    
+    {id:102,name:"rahul",marks:68,hobbies :[ "music","sports"],
+    address:{houseno:100,state:"maharashtra",pincode:"447788"}},
+
+    {id:103,name:"vishal",marks:30,hobbies :[ "gaming","sports"],
+    address:{houseno:102,state:"maharashtra",pincode:"447790"}}
+    
+    ];
+    
+    Fail=students[0];
+    for(i=1;i<students.length;i++)
+    {
+      if(students[i].marks<40){
+        Fail=students[i]
+        console.log(students[i])
+      }
+    }
+    
+    </script>
+    </body>
+</html>

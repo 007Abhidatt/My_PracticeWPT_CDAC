@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>JSON Object</title>
+</head>
+<body>
+    <h1> Json (jvavscript object notation)object</h1>
+    <script>
+        student={rollno:1,name:"santosh",marks:98}
+        console.log(student);
+    </script>
+    <script>
+        student1={Id:1001, name:"Abhidatt" , marks:95, hobbies:["cricket", "biking"]}
+        
+        console.log(student1.Id)
+        console.log(student1.hobbies[0])
+        console.log(student1.marks)
+    </script>
+    <script>
+        console.log("Nested json object");
+        Student2={rollno:3,name:"Gauraansh",
+        address:{plotno:11,state:"MadhyaPradesh",pincode:465650}}
+        // console.log(Student2.name);
+        // console.log(Student2.address)
+        // console.log(Student2.address.state)
+    </script>
+    <script>
+        // array of json objects
+        student=[{id:101, name:"Ram", marks:80,
+        hobbies:["Reading","Cycling"] 
+        },{id:102 , name:"sanket", marks:85,
+        hobbies:["Painting","Dancing"]
+        }];
+        // console.log(student[0])
+        // console.log(student[1])
+        // console.log(student[0].name)
+        // console.log(student[1].name)
+
+
+        for(i=0;i<student.length;i++){
+            console.log(student[i].name,student[i].marks)
+            for(j=0;j<student[i].hobbies.length;j++){
+                console.log(student[i].hobbies[j]);
+
+            }
+        }
+    </script>
+    
+        
+</body>
+</html>

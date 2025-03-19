@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>javascript/inline/internal/external</title>
+    <script type="text/javascript">
+        document.write("javascript on head section")
+    </script>
+    <script src="first.js"></script>
+
+</head>
+<body onload="alert('Welcome to  our website')">
+    <h1>Inline javascript</h1>
+    <button onclick="alert(`button pushed`)"> Pushed here</button>
+    <br><br>
+    <button ondblclick="alert('on Double click')">Click double here</button>
+    <br><br>
+    <hr>
+    <br><br>
+    <script type="text/javascript">
+        document.write("javascript on body section")
+    </script>
+    <br><br>
+    <script>
+        console.log("Hello");
+        f1(); //calling 
+       
+        f2();
+    </script>
+    
+
+
+    
+</body>
+</html>
