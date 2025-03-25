@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fifth</title>
+</head>
+<body>
+
+    <input type="text" id="i1">
+    <br><br>
+    <input type="button" value="reverse" onclick="reverse()">
+
+    <p id="p1"></p>
+
+    <script>
+        function reverse(){
+            const text =document.getElementById("i1").value
+            // let text2 = [];
+            // let index = 0;
+            let str = "";
+            for(i=text.length-1; i>=0; i--){
+                // text2[index++] += text.charAt(i);
+                str += text.charAt(i);
+            }
+            // text3 = text2.join("")
+            // document.getElementById("p1").innerText = text3.toString();
+            document.getElementById("p1").innerText = str;
+
+            // console.log(text2)
+            // const rev=text.reverse();
+            // document.getElementById("p1").innerText=
+
+            
+
+            }
+        
+    </script>
+
+    
+</body>
+</html>

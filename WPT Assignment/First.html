@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML CSS</title>
+    <style>
+        .container{
+            border-width: 5px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            height: 500px;
+            width: 400px;
+            margin: auto;
+
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1 style="color: blue;">Login Form</h1>
+        <h3 style="color: red; padding: bottom ;"> please fill correct details </h3>
+       
+
+        <input type="text" placeholder="user name" id="i1">
+        <br><br>
+        <input type="password" placeholder="password" id="i2">
+        <br><br>
+        <input type="button" value="Login" id="btn" onclick="check()">
+        <br><br>
+        <p id="p1" style="color: red;"> </p>
+
+    
+    </form>
+</div>
+<script>
+    function check(){
+    const user=document.getElementById("i1").value;
+    const pass=document.getElementById("i2").value;
+   
+if( user=="iet"&&pass==123 || user=="cdac" && pass==456 || user=="software" && pass==789){
+    document.getElementById("p1").innerHTML="Welcome login Succesfully";
+    document.getElementById("i1").value="";
+    document.getElementById("i2").value="";
+}
+else{
+    document.getElementById("p1").innerHTML="Invalid userID And Password";
+    document.getElementById("i1").value="";
+    document.getElementById("i2").value="";
+}
+
+
+
+
+    }
+
+</script>
+  
+    
+</body>
+</html>

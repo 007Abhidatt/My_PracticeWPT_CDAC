@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <input id="id1" type="date" onchange="change()">
+        <p id="p1"></p>
+        <script>
+            function change(){
+                const ref=document.getElementById("id1").value
+                document.getElementById("p1").innerHTML="Today's date" +ref;
+            }
+
+        </script>
+
+    </div>
+    
+</body>
+</html>

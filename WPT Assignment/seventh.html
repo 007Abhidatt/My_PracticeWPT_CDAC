@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <div>
+    <input id="i1" type="text" >
+    <select id="s1"  >
+        <option id="Bold"  value="B">B</option>
+        <option id="Italic" value="It">I</option>
+        <option id="Underline" value="Ul">U</option>
+        <option id="BIU"value="BIU">BIU</option>
+    </select>
+    
+    </div>
+    <div id="container">
+
+    </div>
+
+    <script>
+        let text = document.getElementById("i1").value;
+        let dropD =document.getElementById("s1").value;
+        let cont = document.getElementById("container");
+        let para = document.createElement("p1");
+        para.innerHTML = dropD;
+        
+      
+       
+   
+    </script>
+    
+</body>
+</html>
