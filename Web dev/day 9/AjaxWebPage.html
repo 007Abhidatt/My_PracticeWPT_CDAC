@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <style>
+    p{
+        background-color: aqua;
+    
+    }
+    </style>
+    
+</head>
+<body>
+    <div id="div1">
+
+    </div>
+    <input type="button" value="get data" onclick="fetchData()">
+    <script>
+        function fetchData(){
+           const xhr = new XMLHttpRequest();
+           xhr.open("GET" ,"https://jsonplaceholder.typicode.com/photos");
+           xhr.send();
+
+       xhr.onreadystatechange=()=>{
+          if(xhr.readyState==4 && xhr.status==200){
+           
+            const data=JSON.parse(xhr.responseText);
+            console.log(data);
+            const container =document.getElementById("div1");
+
+            for(i=0; i<data.length; i++){
+                const photos =document.createElement("p");
+                photos.innerHTML=data[i].id+" "+data[i].url;
+                container.appendChild(photos);
+            }
+
+         }
+
+       }
+    }
+
+    </script>
+    
+</body>
+</html>

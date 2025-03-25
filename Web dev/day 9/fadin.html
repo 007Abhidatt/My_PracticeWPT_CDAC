@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script
+	src="http://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+
+</head>
+<body>
+<h2  id="id1" style="text-align: center; font-size: xx-large;"><strong>This is a heading</strong></h2>
+
+<p id="id2" style="text-align: center;">This is a paragraph.</p>
+<p id="id3" style="text-align: center;">This is another paragraph.</p>
+
+<button style="align-content: center;">Click me</button>
+<script>
+    $(document).ready(()=>{
+        $("button").click(()=>{ 
+            $("#id1").fadeOut("slow");
+        $("#id2").fadeOut("slow");
+        $("#id3").fadeOut("slow");
+        });
+       
+    });
+</script>
+
+</body>
+</html>

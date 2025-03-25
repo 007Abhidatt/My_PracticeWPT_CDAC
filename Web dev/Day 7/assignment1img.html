@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image assignment</title>
+    <script src="img.js"></script>
+    <style>
+        #div1{
+           margin-left: 40%;
+           border-width: 10px solid black;
+           width: 400px;
+           border-radius: 20px;
+           
+        }
+        #div2{
+            margin-top: 40px;
+
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+    <div id="div1">
+        <img src="car1.jfif"  id="id1">
+
+
+        <script>
+            
+          const refimg=document.getElementById("id1");
+             
+          refimg.addEventListener("mouseover",function(){refimg.setAttribute("src","car2.jfif") })
+          refimg.addEventListener("mouseout",()=>{refimg.setAttribute("src","car1.jfif") })
+
+        </script>
+    </div>
+
+    <div id="div2">
+        <img src="bike3.jfif " id="id2">
+        <script>f1();</script>
+        
+
+        <!-- <script>
+            const refimg2 =document.querySelector("#id2")
+
+            refimg2.addEventListener("mouseover" , function(){refimg2.setAttribute("src","bike4.jfif")})
+            refimg2.addEventListener("mouseout" , function(){refimg2.setAttribute("src","bike3.jfif")})
+        </script> -->
+
+    </div>
+    
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script
+	src="http://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+    <style>
+        #div1{
+            padding: 5px;
+         text-align: center;
+         background-color: #e5eecc;
+         border: solid 1px #c3c3c3;
+         size: 800px;
+         height: 500px;
+        }
+        div{
+            padding: 50px;
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <button id="b1" align-content: center;">Click me to slide down</button>
+        <button id="b2" style="align-content: center;">Click me to slide up</button>
+    
+<div id="div1" style="background-color: aqua;">USE OF SLIDING EFFECTS IN JQUERY</div>
+
+<script>
+    $(document).ready(()=>{
+        $("#b1").click(()=>{ 
+            $("#div1").slideDown("slow");
+        // $("#id2").fadeOut("slow");
+        // $("#id3").fadeOut("slow");
+        });
+        $("#b2").click(()=>{ 
+            $("#div1").slideUp("slow");
+        // $("#id2").fadeOut("slow");
+        // $("#id3").fadeOut("slow");
+        });
+       
+       
+    });
+</script>
+
+</body>
+</html>

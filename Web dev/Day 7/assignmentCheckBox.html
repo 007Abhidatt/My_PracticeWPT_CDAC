@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+    <style>
+        .div{
+            display: flex;
+            gap: 20px;
+            border-width: 50px;
+            margin: 40px;
+
+        }
+        .c1{
+            margin: auto;
+
+        }
+        img{
+            width: 300px;
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <div id="container" class="div" style="background-color:rgb(12, 10, 10);">
+        <div class="div">
+            <img src="default1.jfif" id="id1">
+        </div>
+        <div class="div">
+            <img src="default2.jfif" id="id2">
+        </div>
+    </div>
+    <input class="c1"   type="checkbox" 
+    id="check1" value="uncheck" checked><span>Img1</span>
+    <input class="c1" type="checkbox" 
+     id="check2" value="uncheck"><span>Img2</span>
+
+    <script>
+        const a=document.getElementById("id1");
+        const b=document.getElementById("id2");
+        const c=document.getElementById("check1");
+        const d=document.getElementById("check2");
+        
+        
+    
+
+ c.addEventListener("change" , function(event){
+    if (event.target.checked) {
+      c.addEventListener("click" ,function(){a.setAttribute("src","img11.jfif")})
+
+ } else {
+        c.addEventListener("click" ,function(){a.setAttribute("src","default1.jfif")})
+      
+    }
+        })
+
+
+
+  d.addEventListener("change" , function(event){
+     if (event.target.checked) {
+      d.addEventListener("click",function(){b.setAttribute("src","img22.jfif")})
+                
+ } else {
+     d.addEventListener("click",function(){b.setAttribute("src","default2.jfif")})
+      
+    }
+        })
+
+
+    </script>
+</body>
+</html>

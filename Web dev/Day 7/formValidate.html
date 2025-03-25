@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form V</title>
+</head>
+<body>
+    <form action="https://www.google.co.in/" onclick="return validate()">
+
+        <input type="text" placeholder="UserName "  id="name" onkeyup="Validate_name()">
+        <span id="nameerror">  </span>
+        <br><br>
+
+        <input type="password" placeholder="enter password" id="pass" onkeyup="Validate_Pass()">
+        <span id="passerror"></span>
+        <br><br>
+
+        <!-- <input type="submit" value="submit"> -->
+         <button type="submit"> submit</button>
+
+
+    </form>
+    <script>
+        function validate(){
+            const refname=document.getElementById("name").value;
+            const refpass=document.getElementById("pass").value
+            var flag=true;
+            if(refname.length==0){
+                document.getElementById("nameerror").innerHTML="Name is required";
+                flag=false;
+            }
+            if(refpass.length==0){
+                document.getElementById("passerror").innerHTML="Password is required";
+                flag=false;
+            }
+            return flag;   
+        }
+
+        function Validate_name(){
+            const name=document.getElementById("name").value
+            if(name.length==0){
+                document.getElementById("nameerror").innerHTML="user name is req"
+            }
+            else{
+                document.getElementById("nameerror").innerHTML="";
+
+            }
+        }
+
+        function Validate_Pass(){
+            const pass=document.getElementById("pass").value
+            if(pass.length==0){
+                document.getElementById("passerror").innerHTML="password name is req"
+            }
+            else{
+                document.getElementById("passerror").innerHTML="";
+
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

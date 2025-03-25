@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+<body>
+    <input type="button" value="getData" onclick="getData()">
+
+    <script>
+        function getData(){
+        const ref =new XMLHttpRequest(); 
+        console.log(ref.readyState);
+        ref.open("GET","https://jsonplaceholder.typicode.com/users");
+        ref.send();
+        console.log(ref.readyState);
+        ref.onreadystatechange=()=>{
+            console.log("State changed",ref.readyState);
+            if(ref.readyState==4 && ref.status==200){
+                console.log(ref.responseText);
+            
+            const data=JSON.parse(ref.responseText)
+            console.log(data);
+
+        }
+
+        }
+    }
+
+    </script>
+    
+</body>
+</html>

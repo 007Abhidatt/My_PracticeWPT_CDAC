@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="text" placeholder="enter 1st no" id="input1">
+<input type="text" placeholder="enter 2nd no" id="input2">
+<input type="button" value="add" onclick="summation()"><br>
+<output id="outputid"></output>
+<script>
+    function summation()
+    {
+            var a=document.getElementById("input1").value;
+            var b=document.getElementById("input2").value;
+            c= +a + +b;
+            outputid.value="result= "+c;
+    }
+</script>
+</body>
+</html>

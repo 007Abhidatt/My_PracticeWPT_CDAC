@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+    #div1{
+        margin-bottom: 100%;
+    }
+    img{
+        height: 400px;
+    }
+</style>
+    
+
+</head>
+<body>
+    <h1>Restro Menu</h1>
+
+
+    <div id="div1">
+        <img src="coverimg.jpg" width="400px" id="frontimg">
+        <ol>
+   <li><input type="radio" value="idli" name="rd"  id="idli1"><span>idli</span></li> 
+    <li><input type="radio" value="Rasgulle" name="rd" id="rs"><span>Rasgulle</span></li>
+    <li><input type="radio" value="lassi"  name="rd" id="la"><span>lassi</span></li>
+    <li><input type="radio" value="Samosa" name="rd" id="sa"><span>Samosa</span></li>
+        </ol>
+    </div>
+
+    <script>
+        const a=document.getElementById("frontimg");
+        const b=document.getElementById("idli1");
+        const c=document.getElementById("rs");
+        const d=document.getElementById("la");
+        const e=document.getElementById("sa");
+
+        b.addEventListener("click" ,function(){a.setAttribute("src","idli.jfif")})
+        c.addEventListener("click" ,function(){a.setAttribute("src","rusgulle.jfif")})
+        d.addEventListener("click" ,function(){a.setAttribute("src","lassi.jfif" )})
+        e.addEventListener("click" ,function(){a.setAttribute("src","samosa.jfif")}) 
+    </script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
